@@ -13,6 +13,6 @@ These can be split in **up** or **down** options, depending on whether the barri
 To simplify things only we are consider a European style option (the option can be exercised at maturity only) for a *down-and-out call*. Meaning the barrier is lower than the spot price and if the price is reduced under the barrier before maturity the option becomes invalid. There is no rebate price set for this option, so an invalid option will have a 0 payoff.
 
 The payoff is therefore given by:<br/>
-<img src="https://render.githubusercontent.com/render/math?math=(S_T - K)_+ for S_t > B for all T">
+<img src="https://render.githubusercontent.com/render/math?math=(S_T - K)_\+ \textrm{ for } S_t > B \textrm{ for all } T">
 
 
