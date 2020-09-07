@@ -44,6 +44,6 @@ To simplify things only we are consider a European style option (the option can 
 
 The price is simulated using Euler's method which is a simple technique that does not grant incredible accuracy but is relatively straightforward to code up. Basically for each simulation, the price is updated as:
 
-<img src="https://render.githubusercontent.com/render/math?math=S{t+1} - S{t} = \mu S^t \Delta t + \sigma S^t \Delta W_t">
+<img src="https://render.githubusercontent.com/render/math?math=S^{t+1} - S^{t} = \mu S^t \Delta t + \sigma S^t \Delta W_t">
 
 ie The increase in price is given by the estimated yearly return (<img src="https://render.githubusercontent.com/render/math?math=\mu">) multiplied by the current price and the relative time step, plus a noise term. This second term combines the expected volatility per year (<img src="https://render.githubusercontent.com/render/math?math=\sigma">) multiplied by the current price and a term which consists of a normally distributed random deviation (<img src="https://render.githubusercontent.com/render/math?math=\Delta W_t">), which is samples at every timestep for a distribution with 0 mean and variance <img src="https://render.githubusercontent.com/render/math?math=\Delta t">.
